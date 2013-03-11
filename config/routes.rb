@@ -1,4 +1,4 @@
-PaymillOnRails400::Application.routes.draw do
+PaymillOnRails::Application.routes.draw do
   root to: 'plans#index'
   resources :subscriptions
   resources :plans

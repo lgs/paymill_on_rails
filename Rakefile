@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-PaymillOnRails400::Application.load_tasks
+PaymillOnRails::Application.load_tasks
