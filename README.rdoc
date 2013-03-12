@@ -1,10 +1,10 @@
 == README
 
-Paymill subscriptions with Rails 4.0.0.beta1. This is based on [ Marc B.'s work](https://github.com/apalancat/paymill-rails) also called [apalancat](https://github.com/apalancat).
+Paymill subscriptions with Rails 4.0.0.beta1. This is based on { Marc B.'s work}[https://github.com/apalancat/paymill-rails] also called {apalancat}[https://github.com/apalancat].
 
 == Usage
 
-Register for a test account at [paymill.com](https://paymill.com/) and create the subscription plans, also called Offers.
+Register for a test account at {paymill.com}[https://paymill.com/] and create the subscription plans, also called Offers.
 
 Setup the app:
 
