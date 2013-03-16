@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0.beta1'
 
 group :developement, :test do
-  gem 'sqlite3'
+  #gem 'sqlite3'
+  gem 'mysql'
 end
 
 # heroku deploy

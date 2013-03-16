@@ -2,6 +2,10 @@
 
 Paymill subscriptions with Rails 4.0.0.beta1. This is based on { Marc B.'s work}[https://github.com/apalancat/paymill-rails] also called {apalancat}[https://github.com/apalancat].
 
+== See Heroku example here
+
+{paymill.com}[https://paymill.com/]
+
 == Usage
 
 Register for a test account at {paymill.com}[https://paymill.com/] and create the subscription plans, also called Offers.
