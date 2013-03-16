@@ -1,18 +1,62 @@
-<div id="plans">
-  <h1>Awesome Plans</h1>
-  <% @plans.each do |plan| %>
-    <div class="plan">
-      <div class="name"><%= plan.name %></div>
-      <div class="details">
-        <div class="price">
-          <%= number_to_currency plan.price, unit: "€" %>
-        </div>
-        <div class="per_month">per month</div>
-        <div class="signup">
-          <%= link_to "Sign up", new_subscription_path(:plan_id => plan.id) %>
+  <div id="plans">
+    <h1>Awesome Plans</h1>
+    <% @plans.each do |plan| %>
+      <!-- div class="plan" -->
+      <div class="span2">
+        <div class="name"><%= plan.name %></div>
+        <div class="details">
+          <div class="price">
+            <%= number_to_currency plan.price, unit: "€" %>
+          </div>
+          <div class="per_month">per month</div>
+          <div class="signup">
+            <%= link_to "Sign up", new_subscription_path(:plan_id => plan.id), :class => 'btn btn-primary' %>
+          </div>
         </div>
       </div>
-    </div>
-  <% end %>
-  <div class="clear"></div>
-</div>
+    <% end %>
+    <div class="clear"></div>
+  </div>
+
+<!-- 
+<%- model_class = Plan -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+ </div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:paymill_id) %></th>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:price) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @plans.each do |plan| %>
+      <tr>
+        <td><%= link_to plan.id, plan_path(plan) %></td>
+        <td><%= plan.paymill_id %></td>
+        <td><%= plan.name %></td>
+        <td><%= plan.price %></td>
+        <td><%=l plan.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_plan_path(plan), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      plan_path(plan),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_plan_path,
+            :class => 'btn btn-primary' %>
+-->
