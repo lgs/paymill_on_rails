@@ -47,3 +47,4 @@ gem 'jbuilder', '~> 1.0.1'
 # gem 'debugger'
 
 gem 'paymill'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
