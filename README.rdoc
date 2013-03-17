@@ -1,10 +1,6 @@
-== README
+== Paymill on Rails 4.0.0.beta1 
 
-Paymill subscriptions with Rails 4.0.0.beta1 on ruby-2.0.0-p. This is based on { Marc B.'s work}[https://github.com/apalancat/paymill-rails] also called {apalancat}[https://github.com/apalancat].
-
-== See Heroku example
-
-   {paymill-on-rails.herokuapp.com}[https://paymill-on-rails.herokuapp.com]
+Paymill subscriptions on Rails 4.0.0.beta1 and ruby-2.0.0-p, {deploied on Heroku}[https://paymill-on-rails.herokuapp.com]. This is based on {Marc B.'s}[https://github.com/apalancat] {work}[https://github.com/apalancat/paymill-rails].
 
 == Usage
 
