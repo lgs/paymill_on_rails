@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-PaymillOnRails::Application.config.secret_key_base = 'e3fc78c1d7e56b0cd5678903368b17fb3d895127ded139bb6747eccae0db4013d154ceef60700ad712fd410972bb4e766f64eef972e95949e9675fdd82dca9d0'
+PaymillOnRails::Application.config.secret_key_base = 'You can use `rake secret` to generate a secure secret key'
