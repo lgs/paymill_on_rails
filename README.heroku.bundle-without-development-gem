@@ -1,3 +1,0 @@
-just run: 
-
-   heroku config:add BUNDLE_WITHOUT=”development:test”

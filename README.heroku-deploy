@@ -1,0 +1,6 @@
+just run: 
+
+   heroku config:add BUNDLE_WITHOUT="development:test"
+   heroku rake db:migrate
+   heroku rake paymill:import_plans
+

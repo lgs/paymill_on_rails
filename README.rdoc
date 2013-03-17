@@ -1,10 +1,10 @@
 == README
 
-Paymill subscriptions with Rails 4.0.0.beta1. This is based on { Marc B.'s work}[https://github.com/apalancat/paymill-rails] also called {apalancat}[https://github.com/apalancat].
+Paymill subscriptions with Rails 4.0.0.beta1 on ruby-2.0.0-p. This is based on { Marc B.'s work}[https://github.com/apalancat/paymill-rails] also called {apalancat}[https://github.com/apalancat].
 
-== See Heroku example here
+== See Heroku example
 
-{paymill.com}[https://paymill.com/]
+   {paymill-on-rails.herokuapp.com}[https://paymill-on-rails.herokuapp.com]
 
 == Usage
 
@@ -16,16 +16,29 @@ Setup the app:
     rake db:migrate
     
     
-Replace the test keys in `config/initializers/paymill.rb` for your own paymill API keys.
+Replace the test keys in 
 
-Run `rake paymill:import_plans` to get the plans and their IDs from paymill into the app.
+   config/initializers/paymill.rb 
 
-That's it! Run `rails server` and it should work.
+for your own paymill API keys.
 
+To get the plans and their IDs from paymill into the app run:
 
-== Ruby version 
+    rake paymill:import_plans
 
-  ruby-2.0.0-p
+That's it! Run 
+
+    rails server
+
+and it should work.
+
+== Deploy on Heroku
+
+From rails app's root directory path run 
+
+   heroku config:add BUNDLE_WITHOUT="development:test"
+   heroku rake db:migrate
+   heroku rake paymill:import_plans
 
 == Current Bundle
 
@@ -143,7 +156,7 @@ GEM
       multi_json (~> 1.0, >= 1.0.2)
 
 PLATFORMS
-  ruby
+  ruby-2.0.0-p
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0.beta1)
