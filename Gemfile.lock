@@ -64,7 +64,6 @@ GEM
     mime-types (1.21)
     minitest (4.6.2)
     multi_json (1.7.0)
-    mysql (2.9.1)
     paymill (0.2.2)
       json
     pg (0.14.1)
@@ -104,6 +103,9 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    sqlite3 (1.3.7)
+    sqlite3-ruby (1.3.3)
+      sqlite3 (>= 1.3.3)
     thin (1.5.0)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -129,11 +131,11 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0.beta1)
   jbuilder (~> 1.0.1)
   jquery-rails
-  mysql
   paymill
   pg
   rails (= 4.0.0.beta1)
   sass-rails (~> 4.0.0.beta1)
+  sqlite3-ruby
   thin
   turbolinks
   twitter-bootstrap-rails!
