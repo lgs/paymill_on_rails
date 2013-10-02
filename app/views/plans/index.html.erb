@@ -8,7 +8,7 @@
         <div class="price">
           <%= number_to_currency plan.price, unit: "€" %>
         </div>
-        <div class="per_month">per month</div>
+        <div class="per_week">per week</div>
         <div class="signup">
           <%= link_to "Sign up", new_subscription_path(:plan_id => plan.id), :class => 'btn btn-primary' %>
         </div>
