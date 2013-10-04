@@ -1,6 +1,10 @@
 == Paymill on Rails 4.0.0 
 
-Paymill subscriptions on Rails 4.0.0 and ruby-2.0.0-p247, {deployed on Heroku}[https://paymill-on-rails.herokuapp.com]. This is based on {Marc B.'s}[https://github.com/apalancat] {work}[https://github.com/apalancat/paymill-rails].
+Paymill subscriptions on Rails 4.0.0 and ruby-2.0.0-p247, {deployed on Heroku}[https://paymill-on-rails.herokuapp.com]. 
+
+This code is adapted from {Railscast #288}[http://railscasts.com/episodes/288-billing-with-stripe] [Billing with Stripe] and based on ruby wrapper for the Paymill API gem {paymill-ruby}[https://github.com/dkd/paymill-ruby]
+
+See also Paymill API reference:  {PAYMILL API/V2 DOCUMENTATION}[https://www.paymill.com/en-gb/documentation-3/reference/api-reference/index.html]
 
 == Usage
 
@@ -166,6 +170,10 @@ DEPENDENCIES
   turbolinks
   twitter-bootstrap-rails
   uglifier (>= 1.3.0)
+
+== Related works
+
+See {apalancat}[https://github.com/apalancat] gem {paymill-rails}[https://github.com/apalancat/paymill-rails], more in general see the {Search repository results on github}[https://github.com/search?q=paymill&ref=cmdform]
 
 == Copyright
 
