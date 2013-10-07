@@ -1,5 +1,9 @@
 == Paymill on Rails 4.0.0 
 
+{<img src="https://gemnasium.com/lgs/paymill-on-rails.png" alt="Dependency Status" />}[https://gemnasium.com/lgs/paymill-on-rails]
+{<img src="https://codeclimate.com/github/lgs/paymill-on-rails.png" />}[https://codeclimate.com/github/lgs/paymill-on-rails]
+
+
 Paymill subscriptions on Rails 4.0.0 and ruby-2.0.0-p247, {deployed on Heroku}[https://paymill-on-rails.herokuapp.com]. 
 
 This code is adapted from {Railscast #288}[http://railscasts.com/episodes/288-billing-with-stripe] [Billing with Stripe] and based on ruby wrapper for the Paymill API gem {paymill-ruby}[https://github.com/dkd/paymill-ruby]
@@ -12,8 +16,10 @@ Register for a test account at {paymill.com}[https://paymill.com/] and create th
 
 Setup the app:
 
-    bundle
-    rake db:migrate
+    $ git clone https://github.com/lgs/paymill-on-rails.git
+    $ cd paymill-on-rails
+    $ bundle
+    $ rake db:migrate
     
     
 Replace the test keys in 
@@ -24,11 +30,11 @@ for your own paymill API keys.
 
 To get the plans and their IDs from paymill into the app run:
 
-    rake paymill:import_plans
+    $ rake paymill:import_plans
 
 That's it! Run 
 
-    rails server
+    $ rails server
 
 and it should work.
 
@@ -36,9 +42,9 @@ and it should work.
 
 From rails app's root directory path run 
 
-   heroku config:add BUNDLE_WITHOUT="development:test"
-   heroku rake db:migrate
-   heroku rake paymill:import_plans
+   $ heroku config:add BUNDLE_WITHOUT="development:test"
+   $ heroku rake db:migrate
+   $ heroku rake paymill:import_plans
 
 == Current Bundle
 
