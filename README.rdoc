@@ -1,7 +1,4 @@
-== Paymill on Rails 4.0.0 
-
-{<img src="https://gemnasium.com/lgs/paymill-on-rails.png" alt="Dependency Status" />}[https://gemnasium.com/lgs/paymill-on-rails]
-{<img src="https://codeclimate.com/github/lgs/paymill-on-rails.png" />}[https://codeclimate.com/github/lgs/paymill-on-rails]
+== Paymill on Rails 4.0.0 {<img src="https://gemnasium.com/lgs/paymill-on-rails.png" alt="Dependency Status" />}[https://gemnasium.com/lgs/paymill-on-rails] {<img src="https://codeclimate.com/github/lgs/paymill-on-rails.png" />}[https://codeclimate.com/github/lgs/paymill-on-rails]
 
 
 Paymill subscriptions on Rails 4.0.0 and ruby-2.0.0-p247, {deployed on Heroku}[https://paymill-on-rails.herokuapp.com]. 
