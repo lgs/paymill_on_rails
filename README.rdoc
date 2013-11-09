@@ -19,9 +19,9 @@ The only data which Paymill on Rails stores locally infact, are Plans and Subscr
 
 See current Paymill on Rails Model Diagrams:
 
-{Paymill on Rails Model Diagrams}(https://raw.github.com/lgs/paymill-on-rails/master/PaymillonRails-Model-Diagrams.jpg)
+{<img src="https://raw.github.com/lgs/paymill-on-rails/master/PaymillonRails-Model-Diagrams.jpg" alt="Paymill on Rails Model Diagrams" />}[Paymill on Rails Model Diagrams]
  
-For further reading see also {payment form}(https://paymill.com/en-gb/documentation-3/introduction/payment-form/) and {security standards}(https://paymill.com/en-gb/support-3/security/security-standards/)
+For further reading see also {payment form}[https://paymill.com/en-gb/documentation-3/introduction/payment-form/] and {security standards}[https://paymill.com/en-gb/support-3/security/security-standards/]
 
 == Usage
 
