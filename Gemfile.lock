@@ -107,7 +107,7 @@ GEM
       rails (>= 3.1)
       railties (>= 3.1)
     tzinfo (0.3.38)
-    uglifier (2.3.0)
+    uglifier (2.3.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
 
@@ -116,11 +116,11 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails
-  jbuilder (~> 1.2)
+  jbuilder
   jquery-rails
   paymill
   pg
-  rails
+  rails (= 4.0.1)
   sass-rails
   sdoc
   turbolinks
