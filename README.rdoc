@@ -7,6 +7,22 @@ This code is adapted from {Railscast #288}[http://railscasts.com/episodes/288-bi
 
 See also Paymill API reference:  {PAYMILL API/V2 DOCUMENTATION}[https://www.paymill.com/en-gb/documentation-3/reference/api-reference/index.html]
 
+== Security Standards
+
+Important information for the credit card data in your HTML form:
+
+With the payment form, it is essential that you do not put a name attribute with the <input> tags for credit card data!
+
+In this way, the credit card data will not be returned to your server, and you will stay outside the legal provisions concerning the storage of such data (PCI compliance).
+
+The only data which Paymill on Rails stores locally infact, are Plans and Subscriptions, which are not sensible and absolutely PCI compliance.
+
+See current Paymill on Rails Model Diagrams:
+
+{Paymill on Rails Model Diagrams}(https://raw.github.com/lgs/paymill-on-rails/master/PaymillonRails-Model-Diagrams.jpg)
+ 
+For further reading see also {payment form}(https://paymill.com/en-gb/documentation-3/introduction/payment-form/) and {security standards}(https://paymill.com/en-gb/support-3/security/security-standards/)
+
 == Usage
 
 Register for a test account at {paymill.com}[https://paymill.com/] and create the subscription plans, also called Offers.
