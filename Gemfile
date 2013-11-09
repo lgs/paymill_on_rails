@@ -53,3 +53,6 @@ gem 'paymill'
 #gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'twitter-bootstrap-rails'
 
+group :development do
+  gem 'rails-erd'
+end
