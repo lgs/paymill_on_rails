@@ -1,6 +1,6 @@
 module PaymillOnRails
   class Subscription < ActiveRecord::Base
-    #include ActiveModel::ForbiddenAttributesProtection
+    include ActiveModel::ForbiddenAttributesProtection
     attr_accessor :paymill_card_token
   
     belongs_to :plan
