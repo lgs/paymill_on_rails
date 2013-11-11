@@ -1,3 +1,0 @@
-Paymill.api_key = ENV['API_KEY']
-PAYMILL_PUBLIC_KEY = ENV['PAYMILL_PUBLIC_KEY']
-
