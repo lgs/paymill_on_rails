@@ -88,6 +88,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  paymill
   paymill_on_rails!
   sqlite3
