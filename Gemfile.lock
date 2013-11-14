@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    paymill_on_rails (0.0.1)
+    paymill_on_rails (0.0.4)
       paymill (~> 0.4.0)
       rails (~> 4.0.1)
 
