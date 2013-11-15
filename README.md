@@ -1,6 +1,6 @@
-# PaymillOnRails:  [**http://lgs.github.io/paymill_on_rails**][18]
+# PaymillOnRails:  
 
-[**<img src="https://gemnasium.com/lgs/paymill_on_rails.png" alt="Dependency Status" />**][1] [**<img src="https://codeclimate.com/github/lgs/paymill_on_rails.png" />**][2]
+[**<img src="https://gemnasium.com/lgs/paymill_on_rails.png" alt="Dependency Status" />**][1] [**<img src="https://codeclimate.com/github/lgs/paymill_on_rails.png" />**][2] [**http://lgs.github.io/paymill_on_rails**][18]
 
 Paymill subscriptions on Rails 4.0.1 and ruby-2.0.0-p247, [**deployed on Heroku**][3]. This code is adapted from [**Railscast #288**][4] and based on ruby wrapper for the Paymill API gem [**paymill-ruby**][5]. See also Paymill API reference:  [**Paymill API/v2 documentation**][6]
 
