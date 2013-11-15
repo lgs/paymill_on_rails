@@ -1,4 +1,4 @@
-# PaymillOnRails 
+# PaymillOnRails:  [**http://lgs.github.io/paymill_on_rails**][18]
 
 [**<img src="https://gemnasium.com/lgs/paymill_on_rails.png" alt="Dependency Status" />**][1] [**<img src="https://codeclimate.com/github/lgs/paymill_on_rails.png" />**][2]
 
