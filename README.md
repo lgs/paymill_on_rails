@@ -198,7 +198,7 @@ DEPENDENCIES
 
 ## Related works
 
-See [**apalancat**][15] gem [**paymill-rails**][16], more in general see the [**Search repository results on github**][17]
+See [**apalancat**][15] gem [**paymill-rails**][16]. More in general see the [**Search repository results on github**][17].
 
 ## Copyright
 
@@ -240,7 +240,7 @@ SOFTWARE.
 [14]: https://app.paymill.com/en-gb#!/index
 [15]: https://github.com/apalancat
 [16]: https://github.com/apalancat/paymill-rails
-[17]: https://github.com/search?q=paymill&ref=cmdform
+[17]: https://github.com/search?l=Ruby&q=paymill&ref=cmdform&type=Repositories
 
 
 
