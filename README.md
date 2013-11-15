@@ -90,6 +90,8 @@ and it should work.
 In your rails app  run 
 
 ```
+   $ heroku config:add API_KEY='your-own-api-key'
+   $ heroku config:add PAYMILL_PUBLIC_KEY='your-own-public-key'
    $ heroku config:add BUNDLE_WITHOUT="development:test"
    $ heroku rake db:migrate
    $ heroku rake paymill_on_rails:import_plans
