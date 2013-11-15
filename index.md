@@ -12,7 +12,7 @@ Paymill subscriptions on Rails 4.0.1 and ruby-2.0.0-p247, [**deployed on Heroku*
 
 Important information for the credit card data in your HTML form:
 
-With the payment form, it is essential that you do not put a name attribute with the <input> tags for credit card data! In this way, the credit card data will not be returned to your server, and you will stay outside the legal provisions concerning the storage of such data ([**PCI compliance**][7]). The only data which Paymill on Rails stores locally infact, are Plans and Subscriptions, which are not sensible and absolutely [**PCI compliant**][7].
+With the payment form, it is essential that you do not put a name attribute with the \<input\> tags for credit card data! In this way, the credit card data will not be returned to your server, and you will stay outside the legal provisions concerning the storage of such data ([**PCI compliance**][7]). The only data which Paymill on Rails stores locally infact, are Plans and Subscriptions, which are not sensible and absolutely [**PCI compliant**][7].
 
 See current Paymill on Rails data model 
 
