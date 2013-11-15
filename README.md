@@ -2,21 +2,13 @@
 
 [**<img src="https://gemnasium.com/lgs/paymill_on_rails.png" alt="Dependency Status" />**][1] [**<img src="https://codeclimate.com/github/lgs/paymill_on_rails.png" />**][2]
 
-Paymill subscriptions on Rails 4.0.1 and ruby-2.0.0-p247, [**deployed on Heroku**][3]
-
-This code is adapted from [**Railscast #288**][4] and based on ruby wrapper for the Paymill API gem [**paymill-ruby**][5]
-
-See also Paymill API reference:  [**PAYMILL API/V2 DOCUMENTATION**][6]
+Paymill subscriptions on Rails 4.0.1 and ruby-2.0.0-p247, [**deployed on Heroku**][3]. This code is adapted from [**Railscast #288**][4] and based on ruby wrapper for the Paymill API gem [**paymill-ruby**][5]. See also Paymill API reference:  [**Paymill API/v2 documentation**][6]
 
 ## Security Standards
 
 Important information for the credit card data in your HTML form:
 
-With the payment form, it is essential that you do not put a name attribute with the <input> tags for credit card data!
-
-In this way, the credit card data will not be returned to your server, and you will stay outside the legal provisions concerning the storage of such data ([**PCI compliance**][7]).  
-
-The only data which Paymill on Rails stores locally infact, are Plans and Subscriptions, which are not sensible and absolutely [**PCI compliant**][7].
+With the payment form, it is essential that you do not put a name attribute with the <input> tags for credit card data! In this way, the credit card data will not be returned to your server, and you will stay outside the legal provisions concerning the storage of such data ([**PCI compliance**][7]). The only data which Paymill on Rails stores locally infact, are Plans and Subscriptions, which are not sensible and absolutely [**PCI compliant**][7].
 
 See current Paymill on Rails data model 
 
@@ -47,9 +39,9 @@ For further reading see also [**payment form**][8] and [**security standards**][
 
 ## Usage
 
-Since the release of [**paymill_on_rails gem 0.0.5**][10], PaymillOnRails becomes a [**Mountable Rails Engines**] for Rails 4. Set up a subscription payment and integrate it with your existing Rails application service is now very simple, just following nex steps:
+Since the release of [**paymill_on_rails gem 0.0.5**][10], PaymillOnRails becomes a [**Mountable Rails Engines**][11] for Rails 4. Set up a subscription payment integrating it with your existing Rails application service is now very simple just following nex steps:
 
-- register for a test account at [**paymill.com**][11] and create the subscription plans, also called Offers ([**read more**][12], which are how Subscription Plans are called in paymill. 
+- register for a test account at [**paymill.com**][12] and create the subscription plans, also called Offers ([**read more**][13], which are how Subscription Plans are called in Paymill. 
 
 - build a new Rails app from scratch (or use your existing one) :
 
@@ -64,14 +56,18 @@ $ rake db:migrate
 - now mount the engine adding the following to config/routes.rb :
 
 ```
-  root 'paymill_on_rails/plans#index'  # (or use another path)
-  mount PaymillOnRails::Engine => "/paymill_on_rails"
+  Prova::Application.routes.draw do
+     root 'paymill_on_rails/plans#index' #(or use another path)
+     mount PaymillOnRails::Engine => "/paymill_on_rails"
+  end
 ```
     
-- replace the test keys with your own paymill API keys (log in and follow [**Dasboard --> My Account**][13]) :
+- set OS env variables, with your own paymill test keys. Login in with your Paymill account follow [**Dasboard**][14] --> My Account --> Settings --> APY Keys, to see your keys and set PAYMILL_PUBLIC_KEY/API_KEY accordingly :
 
 ```
-   config/initializers/paymill.rb 
+   $ env | grep _KEY
+   PAYMILL_PUBLIC_KEY=11111111111111111111111
+   API_KEY=a1b2c3d4e5f6g7h8i9
 ```
 
 - get the plans and their IDs from paymill :
@@ -202,7 +198,7 @@ DEPENDENCIES
 
 ## Related works
 
-See {apalancat}[https://github.com/apalancat] gem {paymill-rails}[https://github.com/apalancat/paymill-rails], more in general see the {Search repository results on github}[https://github.com/search?q=paymill&ref=cmdform]
+See [**apalancat**][15] gem [**paymill-rails**][16], more in general see the [**Search repository results on github**][17]
 
 ## Copyright
 
@@ -230,7 +226,7 @@ SOFTWARE.
 
 [1]: https://gemnasium.com/lgs/paymill_on_rails
 [2]: https://codeclimate.com/github/lgs/paymill-on-rails
-[3]: https://paymill_on_rails.herokuapp.com
+[3]: https://paymill-on-rails.herokuapp.com
 [4]: http://railscasts.com/episodes/288-billing-with-stripe
 [5]: https://github.com/dkd/paymill-ruby
 [6]: https://www.paymill.com/en-gb/documentation-3/reference/api-reference/index.html
@@ -238,6 +234,13 @@ SOFTWARE.
 [8]: https://paymill.com/en-gb/documentation-3/introduction/payment-form
 [9]: https://paymill.com/en-gb/support-3/security/security-standards
 [10]: https://rubygems.org/gems/paymill_on_rails
-[11]: https://paymill.com
-[12]: https://app.paymill.com/en-gb#!/offers
-[13]: https://app.paymill.com/en-gb#!/index
+[11]: http://edgeguides.rubyonrails.org/engines.html
+[12]: https://paymill.com
+[13]: https://app.paymill.com/en-gb#!/offers
+[14]: https://app.paymill.com/en-gb#!/index
+[15]: https://github.com/apalancat
+[16]: https://github.com/apalancat/paymill-rails
+[17]: https://github.com/search?q=paymill&ref=cmdform
+
+
+
