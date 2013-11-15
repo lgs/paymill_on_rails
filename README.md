@@ -61,6 +61,8 @@ $ rake db:migrate
      mount PaymillOnRails::Engine => "/paymill_on_rails"
   end
 ```
+
+- Login in with your Paymill account and follow [**Dasboard --> My Account --> Settings --> APY Keys**][14], to see your keys and set PAYMILL_PUBLIC_KEY/API_KEY accordingly. 
     
 - set OS env variables, with your own paymill test keys :
 
@@ -69,7 +71,6 @@ $ rake db:migrate
    PAYMILL_PUBLIC_KEY=11111111111111111111111
    API_KEY=a1b2c3d4e5f6g7h8i9l1i2m3
 ```
-- Login in with your Paymill account and follow [**Dasboard --> My Account --> Settings --> APY Keys**][14], to see your keys and set PAYMILL_PUBLIC_KEY/API_KEY accordingly. 
 
 - get the plans and their IDs from paymill :
 
