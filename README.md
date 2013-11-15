@@ -245,6 +245,7 @@ SOFTWARE.
 [15]: https://github.com/apalancat
 [16]: https://github.com/apalancat/paymill-rails
 [17]: https://github.com/search?l=Ruby&q=paymill&ref=cmdform&type=Repositories
+[18]: http://lgs.github.io/paymill_on_rails
 
 
 
