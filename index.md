@@ -44,7 +44,7 @@ For further reading see also [**payment form**][8] and [**security standards**][
 
 ## Usage
 
-Since the release of [**paymill_on_rails gem 0.0.5**][10], PaymillOnRails becomes a [**Mountable Rails Engines**][11] for Rails 4. Set up a subscription payment integrating it with your existing Rails application service is now very simple just following nex steps:
+Since the release of [**paymill_on_rails gem 0.0.5**][10], PaymillOnRails becomes a [**Mountable Rails Engine**][11] for Rails 4. Set up a subscription payment integrating it with your existing Rails application service is now very simple just following nex steps:
 
 ##### 1) register for a test account at [**paymill.com**][12] and create the subscription plans, also called Offers ([**read more**][13], which are how Subscription Plans are called in Paymill. 
 
