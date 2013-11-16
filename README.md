@@ -97,7 +97,7 @@ In your rails app run
    $ heroku config:add BUNDLE_WITHOUT="development:test"
    $ git push heroku master
 
-   # set up le DB & import Paymill's plans
+   # set up DB and import Paymill's plans
 
    $ heroku rake db:migrate
    $ heroku rake paymill_on_rails:import_plans
