@@ -46,8 +46,8 @@ Since the release of [**paymill_on_rails gem 0.0.5**][10], PaymillOnRails become
 ##### 2) build a new Rails app from scratch (or use your existing one) :
 
   ```
-  $ rails new myapp && myapp
-  $ echo "gem 'paymill_on_rails' >> Gemfile
+  $ rails new myapp && cd myapp
+  $ echo "gem 'paymill_on_rails'" >> Gemfile
   $ bundle update
   $ rake paymill_on_rails:install:migrations
   $ rake db:migrate
@@ -56,7 +56,7 @@ Since the release of [**paymill_on_rails gem 0.0.5**][10], PaymillOnRails become
 ##### 3) now mount the engine adding the following to config/routes.rb :
 
   ```
-  Prova::Application.routes.draw do
+  Myapp::Application.routes.draw do
      root 'paymill_on_rails/plans#index' #(or use another path)
      mount PaymillOnRails::Engine => "/paymill_on_rails"
   end
