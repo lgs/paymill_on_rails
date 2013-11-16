@@ -87,14 +87,30 @@ Since the release of [**paymill_on_rails gem 0.0.5**][10], PaymillOnRails become
 
 ## Deploy on Heroku
 
-In your rails app  run 
+In your rails app run 
 
 ```
-   $ heroku config:add API_KEY='your-own-api-key'
-   $ heroku config:add PAYMILL_PUBLIC_KEY='your-own-public-key'
+   # if new rails app (not initialized by git) 
+
+   $ git init
+   $ git add .
+   $ git commit -am "first commit"
+
+   # then create & push on Heroku
+
+   $ heroku create
    $ heroku config:add BUNDLE_WITHOUT="development:test"
+   $ git push heroku master
+
+   # set up le DB & import Paymill's plans
+
    $ heroku rake db:migrate
    $ heroku rake paymill_on_rails:import_plans
+
+   # set up Heroku environment variables
+
+   $ heroku config:add API_KEY='your-own-api-key'
+   $ heroku config:add PAYMILL_PUBLIC_KEY='your-own-public-key'
 ```
 
 ## Current Bundle
