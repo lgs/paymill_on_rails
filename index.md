@@ -2,9 +2,10 @@
 layout: index
 ---
 
-# PaymillOnRails 
 
-[**<img src="https://gemnasium.com/lgs/paymill_on_rails.png" alt="Dependency Status" />**][1] [**<img src="https://codeclimate.com/github/lgs/paymill_on_rails.png" />**][2]
+# PaymillOnRails:  
+
+[**<img src="https://gemnasium.com/lgs/paymill_on_rails.png" alt="Dependency Status" />**][1] [**<img src="https://codeclimate.com/github/lgs/paymill_on_rails.png" />**][2] [**http://lgs.github.io/paymill_on_rails**][18]
 
 Paymill subscriptions on Rails 4.0.1 and ruby-2.0.0-p247, [**deployed on Heroku**][3]. This code is adapted from [**Railscast #288**][4] and based on ruby wrapper for the Paymill API gem [**paymill-ruby**][5]. See also Paymill API reference:  [**Paymill API/v2 documentation**][6]
 
@@ -12,7 +13,7 @@ Paymill subscriptions on Rails 4.0.1 and ruby-2.0.0-p247, [**deployed on Heroku*
 
 Important information for the credit card data in your HTML form:
 
-With the payment form, it is essential that you do not put a name attribute with the \<input\> tags for credit card data! In this way, the credit card data will not be returned to your server, and you will stay outside the legal provisions concerning the storage of such data ([**PCI compliance**][7]). The only data which Paymill on Rails stores locally infact, are Plans and Subscriptions, which are not sensible and absolutely [**PCI compliant**][7].
+With the payment form, it is essential that you do not put a name attribute with the <input> tags for credit card data! In this way, the credit card data will not be returned to your server, and you will stay outside the legal provisions concerning the storage of such data ([**PCI compliance**][7]). The only data which Paymill on Rails stores locally infact, are Plans and Subscriptions, which are not sensible and absolutely [**PCI compliant**][7].
 
 See current Paymill on Rails data model 
 
@@ -45,9 +46,9 @@ For further reading see also [**payment form**][8] and [**security standards**][
 
 Since the release of [**paymill_on_rails gem 0.0.5**][10], PaymillOnRails becomes a [**Mountable Rails Engines**][11] for Rails 4. Set up a subscription payment integrating it with your existing Rails application service is now very simple just following nex steps:
 
-- register for a test account at [**paymill.com**][12] and create the subscription plans, also called Offers ([**read more**][13], which are how Subscription Plans are called in Paymill. 
+ 1 register for a test account at [**paymill.com**][12] and create the subscription plans, also called Offers ([**read more**][13], which are how Subscription Plans are called in Paymill. 
 
-- build a new Rails app from scratch (or use your existing one) :
+ 2 build a new Rails app from scratch (or use your existing one) :
 
 ```
 $ rails new myapp && myapp
@@ -57,7 +58,7 @@ $ rake paymill_on_rails:install:migrations
 $ rake db:migrate
 ```
 
-- now mount the engine adding the following to config/routes.rb :
+ 3 now mount the engine adding the following to config/routes.rb :
 
 ```
   Prova::Application.routes.draw do
@@ -66,9 +67,9 @@ $ rake db:migrate
   end
 ```
 
-- Login in with your Paymill account and follow [**Dasboard --> My Account --> Settings --> APY Keys**][14], to see your keys and set PAYMILL_PUBLIC_KEY/API_KEY accordingly. 
+ 4 Login in with your Paymill account and follow [**Dasboard --> My Account --> Settings --> APY Keys**][14], to see your keys and set PAYMILL_PUBLIC_KEY/API_KEY accordingly. 
     
-- set OS env variables, with your own paymill test keys :
+ 5 set OS env variables, with your own paymill test keys :
 
 ```
    $ env | grep _KEY
@@ -76,7 +77,7 @@ $ rake db:migrate
    API_KEY=a1b2c3d4e5f6g7h8i9l1i2m3
 ```
 
-- get the plans and their IDs from paymill :
+ 6 get the plans and their IDs from paymill :
 
 ```
     $ rake paymill_on_rails:import_plans
@@ -94,6 +95,8 @@ and it should work.
 In your rails app  run 
 
 ```
+   $ heroku config:add API_KEY='your-own-api-key'
+   $ heroku config:add PAYMILL_PUBLIC_KEY='your-own-public-key'
    $ heroku config:add BUNDLE_WITHOUT="development:test"
    $ heroku rake db:migrate
    $ heroku rake paymill_on_rails:import_plans
@@ -101,17 +104,15 @@ In your rails app  run
 
 ## Current Bundle
 
-PATH
 ```
+PATH
   remote: .
   specs:
     paymill_on_rails (0.0.6)
       paymill (~> 0.4.0)
       rails (~> 4.0.0)
-```
 
 GEM
-```
   remote: https://rubygems.org/
   specs:
     actionmailer (4.0.1)
@@ -189,15 +190,11 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.38)
-```
 
 PLATFORMS
-```
   ruby 2.0.0
-```
 
 DEPENDENCIES
-```
   paymill_on_rails!
   sqlite3
 ```
@@ -247,6 +244,7 @@ SOFTWARE.
 [15]: https://github.com/apalancat
 [16]: https://github.com/apalancat/paymill-rails
 [17]: https://github.com/search?l=Ruby&q=paymill&ref=cmdform&type=Repositories
+[18]: http://lgs.github.io/paymill_on_rails
 
 
 
