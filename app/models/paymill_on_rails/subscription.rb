@@ -2,7 +2,7 @@ module PaymillOnRails
   class Subscription < ActiveRecord::Base
      
     # paymill_card_token is one-time used token
-    # and is not stored into DB, bu is used by 
+    # and is not stored into DB, but is used by 
     # Paymill::Payment.create to get payment,
     # then just payment.id is stored 
     # ( see: https://github.com/dkd/paymill-ruby )
