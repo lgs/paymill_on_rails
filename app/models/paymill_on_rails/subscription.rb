@@ -1,7 +1,7 @@
 module PaymillOnRails
   class Subscription < ActiveRecord::Base
     include ActiveModel::ForbiddenAttributesProtection
-    attr_accessor :paymill_card_token
+    attr_accessible :paymill_card_token
   
     belongs_to :plan
     validates_presence_of :plan_id
