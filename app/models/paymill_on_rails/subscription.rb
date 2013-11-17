@@ -1,11 +1,11 @@
 module PaymillOnRails
   class Subscription < ActiveRecord::Base
-    attr_accessible :paymill_card_token
-  
+    attr_accessor :paymill_card_token
+
     belongs_to :plan
     validates_presence_of :plan_id
     validates_presence_of :email
-    
+
     def save_with_payment
       if valid?
         client = Paymill::Client.create email: email, description: name
