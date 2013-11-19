@@ -7,6 +7,7 @@ require "paymill_on_rails/version"
 Gem::Specification.new do |s|
   s.name        = "paymill_on_rails"
   s.version     = PaymillOnRails::VERSION
+  s.license 	= 'MIT'
 
   s.authors     = ["Luca G. Soave"]
   s.email       = ["luca.soave@gmail.com"]
@@ -21,5 +22,5 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 4.0.0"
   s.add_dependency "paymill", "~> 0.4.0"
 
-  #s.add_development_dependency "sqlite3"
+  s.add_development_dependency "sqlite3"
 end
