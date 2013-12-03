@@ -77,7 +77,8 @@ simple just following next steps:
 
 ##### 4) Login in with your Paymill account and follow [**Dasboard --> My Account --> Settings --> APY Keys**][14], to see your keys and set PAYMILL_PUBLIC_KEY/API_KEY accordingly.
 
-##### 5) set OS env variables, with your own paymill test keys :
+##### 5) set OS env variables, with your own paymill test keys (API_KEY is now
+called private test key) :
 
   ```
    $ env | grep _KEY
