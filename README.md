@@ -1,8 +1,11 @@
 # PaymillOnRails:
 
-<!--[**<img src="https://gemnasium.com/lgs/paymill_on_rails.png" alt="Dependency
-Status" />**][1] --> [**<img
-src="https://codeclimate.com/github/lgs/paymill_on_rails.png" />**][2]
+<!--
+[**<img src="https://gemnasium.com/lgs/paymill_on_rails.png" alt="Dependency
+Status" />**][1] 
+--> 
+
+[**<img src="https://codeclimate.com/github/lgs/paymill_on_rails.png" />**][2]
 
 Paymill subscriptions on Rails 4.0.1 and ruby-2.0.0-p247, [**deployed on
 Heroku**][3]. This code is adapted from [**Railscast #288**][4] and based on
