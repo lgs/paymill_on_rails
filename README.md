@@ -1,16 +1,26 @@
-# PaymillOnRails:  
+# PaymillOnRails:
 
-[**<img src="https://gemnasium.com/lgs/paymill_on_rails.png" alt="Dependency Status" />**][1] [**<img src="https://codeclimate.com/github/lgs/paymill_on_rails.png" />**][2] 
+[**<img src="https://gemnasium.com/lgs/paymill_on_rails.png" alt="Dependency
+Status" />**][1] [**<img
+src="https://codeclimate.com/github/lgs/paymill_on_rails.png" />**][2]
 
-Paymill subscriptions on Rails 4.0.1 and ruby-2.0.0-p247, [**deployed on Heroku**][3]. This code is adapted from [**Railscast #288**][4] and based on ruby wrapper for the Paymill API gem [**paymill-ruby**][5]. See also Paymill API reference:  [**Paymill API/v2 documentation**][6]
+Paymill subscriptions on Rails 4.0.1 and ruby-2.0.0-p247, [**deployed on
+Heroku**][3]. This code is adapted from [**Railscast #288**][4] and based on
+ruby wrapper for the Paymill API gem [**paymill-ruby**][5]. See also Paymill API
+reference:  [**Paymill API/v2 documentation**][6]
 
 ## Security Standards
 
 Important information for the credit card data in your HTML form:
 
-With the payment form, it is essential that you do not put a name attribute with the \<input\> tags for credit card data! In this way, the credit card data will not be returned to your server, and you will stay outside the legal provisions concerning the storage of such data ([**PCI compliance**][7]). The only data which Paymill on Rails stores locally infact, are Plans and Subscriptions, which are not sensible and absolutely [**PCI compliant**][7].
+With the payment form, it is essential that you do not put a name attribute with
+the \<input\> tags for credit card data! In this way, the credit card data will
+not be returned to your server, and you will stay outside the legal provisions
+concerning the storage of such data ([**PCI compliance**][7]). The only data
+which Paymill on Rails stores locally in fact, are Plans and Subscriptions, which
+are not sensible and absolutely [**PCI compliant**][7].
 
-See current Paymill on Rails data model 
+See current Paymill on Rails data model
 
 ```
   ActiveRecord::Schema.define(version: 20121207103300) do
@@ -39,9 +49,12 @@ For further reading see also [**payment form**][8] and [**security standards**][
 
 ## Usage
 
-Since the release of [**paymill_on_rails gem 0.0.5**][10], PaymillOnRails becomes a [**Mountable Rails Engine**][11] for Rails 4. Set up a subscription payment integrating it with your existing Rails application service is now very simple just following nex steps:
+Since the release of [**paymill_on_rails gem 0.0.5**][10], PaymillOnRails
+becomes a [**Mountable Rails Engine**][11] for Rails 4. Set up a subscription
+payment integrating it with your existing Rails application service is now very
+simple just following next steps:
 
-##### 1) register for a test account at [**paymill.com**][12] and create the subscription plans, also called Offers ([**read more**][13], which are how Subscription Plans are called in Paymill. 
+##### 1) register for a test account at [**paymill.com**][12] and create the subscription plans, also called Offers ([**read more**][13], which are how Subscription Plans are called in Paymill.
 
 ##### 2) build a new Rails app from scratch (or use your existing one) :
 
@@ -62,9 +75,10 @@ Since the release of [**paymill_on_rails gem 0.0.5**][10], PaymillOnRails become
   end
   ```
 
-##### 4) Login in with your Paymill account and follow [**Dasboard --> My Account --> Settings --> APY Keys**][14], to see your keys and set PAYMILL_PUBLIC_KEY/API_KEY accordingly. 
-    
-##### 5) set OS env variables, with your own paymill test keys :
+##### 4) Login in with your Paymill account and follow [**Dasboard --> My Account --> Settings --> APY Keys**][14], to see your keys and set PAYMILL_PUBLIC_KEY/API_KEY accordingly.
+
+##### 5) set OS env variables, with your own paymill test keys (API_KEY is now
+called private test key) :
 
   ```
    $ env | grep _KEY
@@ -82,10 +96,10 @@ Since the release of [**paymill_on_rails gem 0.0.5**][10], PaymillOnRails become
 
 ## Deploy on Heroku
 
-In your rails app run 
+In your rails app run
 
 ```
-   # if new rails app (not initialized by git) 
+   # if new rails app (not initialized by git)
 
    $ git init
    $ git add .
@@ -207,7 +221,8 @@ DEPENDENCIES
 
 ## Related works
 
-See [**apalancat**][15] gem [**paymill-rails**][16]. More in general see the [**Search repository results on github**][17].
+See [**apalancat**][15] gem [**paymill-rails**][16]. More in general see the
+[**Search repository results on github**][17].
 
 ## Copyright
 
