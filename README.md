@@ -1,7 +1,7 @@
 # PaymillOnRails:
 
-[**<img src="https://gemnasium.com/lgs/paymill_on_rails.png" alt="Dependency
-Status" />**][1] [**<img
+<!--[**<img src="https://gemnasium.com/lgs/paymill_on_rails.png" alt="Dependency
+Status" />**][1] --> [**<img
 src="https://codeclimate.com/github/lgs/paymill_on_rails.png" />**][2]
 
 Paymill subscriptions on Rails 4.0.1 and ruby-2.0.0-p247, [**deployed on
@@ -77,8 +77,7 @@ simple just following next steps:
 
 ##### 4) Login in with your Paymill account and follow [**Dasboard --> My Account --> Settings --> APY Keys**][14], to see your keys and set PAYMILL_PUBLIC_KEY/API_KEY accordingly.
 
-##### 5) set OS env variables, with your own paymill test keys (API_KEY is now
-called private test key) :
+##### 5) set OS env variables, with your own paymill test keys (API_KEY is now called private test key) :
 
   ```
    $ env | grep _KEY
@@ -224,6 +223,9 @@ DEPENDENCIES
 See [**apalancat**][15] gem [**paymill-rails**][16]. More in general see the
 [**Search repository results on github**][17].
 
+## Project Page
+[**http://lgs.github.io/paymill_on_rails/**][18]
+
 ## Copyright
 
 (The MIT License)
@@ -249,7 +251,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 [1]: https://gemnasium.com/lgs/paymill_on_rails
-[2]: https://codeclimate.com/github/lgs/paymill-on-rails
+[2]: https://codeclimate.com/github/lgs/paymill_on_rails
 [3]: https://paymill-on-rails.herokuapp.com
 [4]: http://railscasts.com/episodes/288-billing-with-stripe
 [5]: https://github.com/dkd/paymill-ruby
@@ -265,4 +267,4 @@ SOFTWARE.
 [15]: https://github.com/apalancat
 [16]: https://github.com/apalancat/paymill-rails
 [17]: https://github.com/search?l=Ruby&q=paymill&ref=cmdform&type=Repositories
-
+[18]: http://lgs.github.io/paymill_on_rails/
