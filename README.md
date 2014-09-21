@@ -7,7 +7,7 @@ Status" />**][1]
 
 [**<img src="https://codeclimate.com/github/lgs/paymill_on_rails.png" />**][2]
 
-Paymill subscriptions on Rails 4.0.1 and ruby-2.0.0-p247, [**deployed on
+Paymill subscriptions on Rails 4.1.6 and ruby-2.1.2p95, [**deployed on
 Heroku**][3]. This code is adapted from [**Railscast #288**][4] and based on
 ruby wrapper for the Paymill API gem [**paymill-ruby**][5]. See also Paymill API
 reference:  [**Paymill API/v2 documentation**][6]
@@ -130,95 +130,93 @@ In your rails app run
 PATH
   remote: .
   specs:
-    paymill_on_rails (0.0.6)
+    paymill_on_rails (0.0.9)
       paymill (~> 0.4.0)
-      rails (~> 4.0.0)
+      rails (~> 4.1.6)
+      sqlite3
 
 GEM
   remote: https://rubygems.org/
   specs:
-    actionmailer (4.0.1)
-      actionpack (= 4.0.1)
-      mail (~> 2.5.4)
-    actionpack (4.0.1)
-      activesupport (= 4.0.1)
-      builder (~> 3.1.0)
-      erubis (~> 2.7.0)
+    actionmailer (4.1.6)
+      actionpack (= 4.1.6)
+      actionview (= 4.1.6)
+      mail (~> 2.5, >= 2.5.4)
+    actionpack (4.1.6)
+      actionview (= 4.1.6)
+      activesupport (= 4.1.6)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
-    activemodel (4.0.1)
-      activesupport (= 4.0.1)
-      builder (~> 3.1.0)
-    activerecord (4.0.1)
-      activemodel (= 4.0.1)
-      activerecord-deprecated_finders (~> 1.0.2)
-      activesupport (= 4.0.1)
-      arel (~> 4.0.0)
-    activerecord-deprecated_finders (1.0.3)
-    activesupport (4.0.1)
-      i18n (~> 0.6, >= 0.6.4)
-      minitest (~> 4.2)
-      multi_json (~> 1.3)
+    actionview (4.1.6)
+      activesupport (= 4.1.6)
+      builder (~> 3.1)
+      erubis (~> 2.7.0)
+    activemodel (4.1.6)
+      activesupport (= 4.1.6)
+      builder (~> 3.1)
+    activerecord (4.1.6)
+      activemodel (= 4.1.6)
+      activesupport (= 4.1.6)
+      arel (~> 5.0.0)
+    activesupport (4.1.6)
+      i18n (~> 0.6, >= 0.6.9)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
       thread_safe (~> 0.1)
-      tzinfo (~> 0.3.37)
-    arel (4.0.1)
-    atomic (1.1.14)
-    builder (3.1.4)
+      tzinfo (~> 1.1)
+    arel (5.0.1.20140414130214)
+    builder (3.2.2)
     erubis (2.7.0)
     hike (1.2.3)
-    i18n (0.6.5)
+    i18n (0.6.11)
     json (1.8.1)
-    mail (2.5.4)
-      mime-types (~> 1.16)
-      treetop (~> 1.4.8)
-    mime-types (1.25)
-    minitest (4.7.5)
-    multi_json (1.8.2)
+    mail (2.6.1)
+      mime-types (>= 1.16, < 3)
+    mime-types (2.3)
+    minitest (5.4.1)
+    multi_json (1.10.1)
     paymill (0.4.0)
       json
-    polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
-    rails (4.0.1)
-      actionmailer (= 4.0.1)
-      actionpack (= 4.0.1)
-      activerecord (= 4.0.1)
-      activesupport (= 4.0.1)
+    rails (4.1.6)
+      actionmailer (= 4.1.6)
+      actionpack (= 4.1.6)
+      actionview (= 4.1.6)
+      activemodel (= 4.1.6)
+      activerecord (= 4.1.6)
+      activesupport (= 4.1.6)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 4.0.1)
-      sprockets-rails (~> 2.0.0)
-    railties (4.0.1)
-      actionpack (= 4.0.1)
-      activesupport (= 4.0.1)
+      railties (= 4.1.6)
+      sprockets-rails (~> 2.0)
+    railties (4.1.6)
+      actionpack (= 4.1.6)
+      activesupport (= 4.1.6)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (10.1.0)
-    sprockets (2.10.0)
+    rake (10.3.2)
+    sprockets (2.12.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.0.1)
+    sprockets-rails (2.1.4)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    sqlite3 (1.3.8)
-    thor (0.18.1)
-    thread_safe (0.1.3)
-      atomic
+    sqlite3 (1.3.9)
+    thor (0.19.1)
+    thread_safe (0.3.4)
     tilt (1.4.1)
-    treetop (1.4.15)
-      polyglot
-      polyglot (>= 0.3.1)
-    tzinfo (0.3.38)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
 
 PLATFORMS
-  ruby 2.0.0
+  ruby 2.1.2p95
 
 DEPENDENCIES
   paymill_on_rails!
-  sqlite3
 ```
 
 ## Related works
