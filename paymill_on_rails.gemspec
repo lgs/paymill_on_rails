@@ -13,14 +13,14 @@ Gem::Specification.new do |s|
   s.email       = ["luca.soave@gmail.com"]
   s.homepage    = "https://github.com/lgs/paymill_on_rails"
 
-  s.summary     = "Paymill subscriptions with Rails 4"
-  s.description = "A rails engine to integrate Paymill subscriptions within your Rails 4 application, out of the box"
+  s.summary     = "Paymill subscriptions with Rails 4.1.6"
+  s.description = "A rails engine to integrate Paymill subscriptions within your Rails 4.1.6 application, out of the box"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.0.0"
+  s.add_dependency "rails", "~> 4.1.6"
   s.add_dependency "paymill", "~> 0.4.0"
 
-  s.add_development_dependency "sqlite3"
+  s.add_dependency "sqlite3"
 end
