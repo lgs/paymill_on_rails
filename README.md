@@ -1,11 +1,14 @@
 # PaymillOnRails:
 
-<!--
-[**<img src="https://gemnasium.com/lgs/paymill_on_rails.png" alt="Dependency
-Status" />**][1] 
---> 
+[**<img src="https://gemnasium.com/lgs/paymill_on_rails.png" alt="Dependency Status" />**][1] 
 
 [**<img src="https://codeclimate.com/github/lgs/paymill_on_rails.png" />**][2]
+
+[**<img src="https://travis-ci.org/lgs/paymill_on_rails.svg?branch=master" />**][19]
+
+[**<img src="https://img.shields.io/coveralls/lgs/paymill_on_rails/master.svg" />**][20]
+
+
 
 Paymill subscriptions on Rails 4.2 and Ruby 2.1.5p273, [**deployed on
 Heroku**][3]. This code is adapted from [**Railscast #288**][4] and based on
@@ -295,3 +298,6 @@ SOFTWARE.
 [16]: https://github.com/apalancat/paymill-rails
 [17]: https://github.com/search?l=Ruby&q=paymill&ref=cmdform&type=Repositories
 [18]: http://lgs.github.io/paymill_on_rails/
+[19]: http://travis-ci.org/lgs/paymill_on_rails
+[20]: https://coveralls.io/r/mongoid/mongoid?branch=master
+
