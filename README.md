@@ -130,7 +130,7 @@ In your rails app run
 PATH
   remote: .
   specs:
-    paymill_on_rails (0.1.1)
+    paymill_on_rails (0.2.0)
       paymill (~> 0.5.1)
       rails (~> 4.2)
       sqlite3
