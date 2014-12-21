@@ -2,4 +2,6 @@ language: ruby
 bundler_args: --without development
 rvm:
   - 2.1.5
+script:
+  - RAILS_ENV=test bundle exec rake --trace db:migrate test
 bundler_args: --binstubs=./bundler_stubs
