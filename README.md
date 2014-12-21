@@ -2,7 +2,7 @@
 
 [**<img src="https://gemnasium.com/lgs/paymill_on_rails.png" alt="Dependency Status" />**][1] 
 [**<img src="https://codeclimate.com/github/lgs/paymill_on_rails.png" />**][2]
-[**<img src="https://travis-ci.org/lgs/paymill_on_rails.svg?branch=master" />**][19]
+<!-- [**<img src="https://travis-ci.org/lgs/paymill_on_rails.svg?branch=master" />**][19] -->
 <!-- [**<img src="https://img.shields.io/coveralls/lgs/paymill_on_rails/master.svg" />**][20] -->
 
 
